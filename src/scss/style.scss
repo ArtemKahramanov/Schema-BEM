@@ -22,8 +22,9 @@
 }
 
 .logo{
-	width: 30%;
+	width: 26%;
 	&__image{
+		max-width: 75px;
 		width: 100%;
 		padding: 10px;
 	}
@@ -369,6 +370,7 @@
 		text-decoration: none;
 		text-align: center;
 		background: #85B959;
+		border: 1px solid #85B959;
 		padding: 8px 15px;
 		border: none;
 		border-radius: 5px;
@@ -385,24 +387,60 @@
 /*10*/
 
 .reviews{
-	&__top{}
-	&__name{}
-	&__row{}
-	&__left-part{}
+	width: 1200px;
+	margin: 30px auto;
+	padding: 15px;
+	&__top{
+		margin-bottom: 40px;
+	}
+	&__name{
+		font-size: 24px;
+		text-transform: uppercase;
+		border-bottom: 2px solid black;
+		padding-bottom: 5px;
+	}
+	&__kol{
+		color: #777;
+	}
+	&__row{
+		display: flex;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 15px;
+    	margin-bottom: 30px;
+	}
+	&__left-part{
+		width: 20%;
+	}
 	&__inf{}
-	&__autor{}
-	&__date{}
-	&__right-part{}
+	&__autor{
+		margin: 30px 0 10px 0;
+		display: block;
+		color: #7f7f7f;
+	}
+	&__date{
+		color: #9c9c9c;
+		font-weight: 300;
+	}
+	&__right-part{
+		width: 80%;
+	}
 	&__theme{}
-	&__theme-name{}
+	&__theme-name{
+		font-size: 22px;
+		font-weight: 500;
+		color: black;
+	}
 	&__content{}
-	&__text{}
-	&__theme{}
-	&__content{}
+	&__text{
+		color: #7f7f7f;
+		line-height: 1.5;
+	}
 }
 
 .rating{
-	&rating__value{}
+	&__value{
+		color: #e6bb34;
+	}
 }
 
 /*11*/
