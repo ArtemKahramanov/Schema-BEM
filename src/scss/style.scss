@@ -48,7 +48,13 @@
 		margin: auto;
 	}
 	&__title{
-		margin: 10px 0;
+		padding-top: 10px;
+		margin: 0;
+		font: 22px Roboto;
+    	font-weight: 500;
+	}
+	&__text{
+		line-height: 1.5;
 	}
 }
 
@@ -63,6 +69,8 @@
 		font: 48px Roboto;
 		font-weight: bold;
 		text-transform: uppercase;
+		margin: 0;
+    	padding: 15px 0;
 	}
 	&__line{
 		position: relative;
@@ -167,10 +175,10 @@
 	&__name{}
 	&__title{
 		font-size: 30px;
-		margin-top: 8px;
+		padding-top: 8px;
 		display: block;
 		text-transform: uppercase;
-		margin-bottom: 0;
+		margin: 0;
 	}
 	&__line{
 		width: 20px;
@@ -222,7 +230,10 @@
 	}
 	&__item{
 		display: inline-block;
-		padding: 0 15px;
+		margin-right: 25px;
+		&:last-child{
+			margin: 0;
+		}
 	}
 	&__link{
 		text-transform: uppercase;
@@ -253,7 +264,8 @@
 	&__title{
 		font-size: 28px;
 		color: white;
-		margin: 0 0 5px 0;
+		padding-bottom: 5px;
+		margin: 0;
 	}
 	&__body{
     	background: url(img/bar.jpg) no-repeat;
@@ -340,11 +352,17 @@
 		list-style-type: none;
 		padding: 25px;
 		border-bottom: 1px solid #ccc;
+		color: #727b8e;
 		i{
-			color: #727b8e;
+			color: #85B959;
 		}
 	}
-	&__item{}
+	&__item{
+		padding-bottom: 5px;
+		&:last-child{
+			padding-bottom: 0;
+		}
+	}
 	&__btn{}
 }
 
@@ -445,33 +463,165 @@
 
 /*11*/
 .product{
-	&__left{}
-	&__image{}
-	&__right{}
-	&__name{}
-	&__arrow{}
-	&__line{}
-	&__main-inf{}
-	&__price{}
-	&__star{}
-	&__reviews{}
-	&__body{}
-	&__desc{}
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	&__left{
+		width: 38%;
+	}
+	&__image{
+		width: 100%;
+	}
+	&__right{
+		width: 62%;
+		padding: 0 15px;
+	}
+	&__name{
+		font-size: 22px;
+		font-weight: 300;
+		margin: 0;
+		color: #3c3c3c;
+	}
+	&__arrow{
+		float: right;
+	}
+	&__main-inf{
+		margin: 0 0 25px 0;
+	}
+	&__price{
+		font-size: 20px;
+	}
+	&__star{
+		color: #e6bb34;
+		padding: 0 5px;
+	}
+	&__reviews{
+		padding-left: 15px;
+		color: #767676;
+		font-size: 14px;
+	}
+	&__line{
+		margin: 40px 0px;
+	}
+	&__desc{
+		color: #767676;
+		font-size: 14px;
+		line-height: 1.5;
+	}
 	&__additionally{}
-	&__include{}
-	&__footer{}
-	&__shere{}
+	&__include{
+		display: block;
+		padding-bottom: 5px;
+		color: #767676;
+		font-size: 14px;
+	}
+	&__footer{
+		margin: 15px 0;
+	}
+	&__text{
+		display: block;
+		color: #7f7f7f;
+		font-size: 14px;
+		padding-bottom: 5px;
+	}
+	&__shere{
+		color: #7f7f7f;
+		font-size: 18px;
+		i{
+			padding-left: 10px;
+		}
+	}
 }
 
 .breadcrumbs{
-	&__list{}
-	&__item{}
-	&__text{}
+	&__list{
+		padding: 0;
+		margin: 0 0 10px 0;
+		list-style-type: none;
+	}
+	&__item{
+		font-size: 12px;
+		display: inline-block;
+	}
+	&__link{
+		color: #9f9f9f;
+		text-decoration: none;
+	}
 }
-
+.bye{
+	margin: 20px 0;
+	display: flex;
+	&__kol{
+		width: 35px;
+		height: 43px;
+    	border: 1px solid #dfdfdf;
+    	padding: 0;
+    	display: inline-grid;
+    	align-items: center;
+    	justify-content: center;
+	}
+	&__selecter{
+		display: flex;
+		align-items: center;
+		margin-right: 20px;
+	}
+}
 .button{
-	&--arrow{}
-	&--selected{}
-	&--bye{}
-	&--favorite{}
+	&--arrow{
+		border: none;
+		background: transparent;
+		display: block;
+		font-size: 14px;
+		padding: 0;
+		i{
+			border: 1px solid #dfdfdf;
+			color: #3c3c3c;
+    		width: 20px;
+    		height: 20px;
+    		align-items: center;
+    		justify-content: center;
+    		display: inline-flex;
+		}
+	}
+	&--selected{
+		border: none;
+		background: white;
+		padding: 0;
+		i{
+    		font-size: 14px;
+    		padding: 5px;
+    		height: 11px;
+    		border-right: 1px solid #dfdfdf;
+    		border-top: 1px solid #dfdfdf;
+    		border-bottom: 1px solid #dfdfdf;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		&:first-child{
+    			border-bottom: none;
+    		}
+		}
+	}
+	&--bye{
+		font-size: 14px;
+		text-transform: uppercase;
+		cursor: pointer;
+		border: 1px solid #444;
+		background: white;
+		padding: 10px 15px;
+		color: #444;
+		i{
+			font-size: 18px;
+			padding-right: 5px;
+		}
+	}
+	&--favorite{
+		color: #444;
+		font-size: 19px;
+		border: none;
+		margin-left: 15px;
+		background: white;
+		border: 1px solid #dfdfdf;
+    	width: 45px;
+	}
 }
