@@ -2,68 +2,53 @@
 <html>
 <head>
 	<title>Test</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-
+<div class="container">
 <!-- 2 -->
 <div class="twitt">
-	<div class="logo">
-		<img src="img/twitter.png" class="logo__image">
+	<div class="twitt__logo">
+		<i class="fa fa-twitter" aria-hidden="true"></i>
 	</div>
 
 	<div class="twitt__content">
-		<p class="twitt__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		</p>
-	<div class="twitt__date">
-		<p class="twitt__content-date">2 day ago</p>
-	</div>
+		<p class="twitt__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		<p class="twitt__date">2 day ago</p>
 	</div>
 </div>
 
 
 <!-- 3 -->
 <div class="card">
-	<div class="card__block">
-		<div class="card__header">
-			<img src="img/ok.png" class="card__image">
+	<div class="card-block">
+		<div class="card-block__header">
+			<i class="fa fa-expand" aria-hidden="true"></i>
 		</div>	
 
-		<div class="card__name">
-			<h2 class="card__title">Full Responsive</h2>
-		</div>
+		<h2 class="card-block__title">Full Responsive</h2>
 
-		<div class="card__body">
-			<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</div>	
+		<p class="card-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	
 	</div>
-	<div class="card__block">
-		<div class="card__header">
-			<img src="img/ok.png" class="card__image">
-		</div>	
 
-		<div class="card__name">
-			<h2 class="card__title">Paralax Scrolling Effect</h2>
-		</div>
-
-		<div class="card__body">
-			<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	<div class="card-block">
+		<div class="card-block__header">
+			<i class="fa fa-rocket" aria-hidden="true"></i>
 		</div>	
+		<h2 class="card-block__title">Paralax Scrolling Effect</h2>
+		<p class="card-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 	</div>
-	<div class="card__block">
-		<div class="card__header">
-			<img src="img/ok.png" class="card__image">
+
+	<div class="card-block">
+		<div class="card-block__header">
+			<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
 		</div>	
 
-		<div class="card__name">
-			<h2 class="card__title">Full Size Control</h2>
-		</div>
-
-		<div class="card__body">
-			<p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		</div>	
+		<h2 class="card-block__title">Full Size Control</h2>
+		
+		<p class="card-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>	
 	</div>	
 </div>	
 
@@ -75,7 +60,7 @@
 	</div>
 
 	<div class="info-block__line">
-		<span><i class="fa fa-list-ul" aria-hidden="true"></i></span>
+		<i class="fa fa-list-ul" aria-hidden="true"></i>
 	</div>
 
 	<div class="info-block__content">
@@ -89,35 +74,31 @@
 
 <!-- 5 -->
 <div class="biography">
-	<div class="biography__img">
-		<img src="img/pperson.jpg" class="biography__person-image">
-	</div>
+	
+	<img src="img/pperson.jpg" class="biography__img">
 
-	<h2 class="biography__title">This is me. Designtr by day developer by night. I never sleep... almost</h2>
+	<div class="title title--line">This is me. Designer by day <img src="img/symbol.png" class="biography__symbol" width="30" height="30"> developer by night. I never sleep... almost</div>
 
-	<div class="biography__line"></div>
 
-	<div class="biography__desc">
-		<p class="biography__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident.</p>
-	</div>
+	<p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident.</p>
 
 	<div class="biography__statistics">
-		<div class="biography__block">
-			<span class="biography__numbers">112</span>
-			<span class="biography__short-desc">lorem</span>
+		<div class="biography-item">
+			<span class="biography-item__numbers">112</span>
+			<span class="biography-item__short-desc">lorem</span>
 		</div>
-		<div class="biography__block">
-			<span class="biography__numbers">3265</span>
-			<span class="biography__short-desc">lorem</span>
+		<div class="biography-item">
+			<span class="biography-item__numbers">3265</span>
+			<span class="biography-item__short-desc">lorem</span>
 		</div>
-		<div class="biography__block">
-			<span class="biography__numbers">47</span>
-			<span class="biography__short-desc">lorem</span>
+		<div class="biography-item">
+			<span class="biography-item__numbers">47</span>
+			<span class="biography-item__short-desc">lorem</span>
 		</div>
 	</div>
 	
@@ -128,39 +109,36 @@
 <div class="optimized">
 	<div class="optimized__left-part">
 		<img src="img/rest.jpg" class="optimized__image">
+	    <a href="#" class="button button--white">See more</a>
 	</div>
 	
 	<div class="optimized__rifht-part">
 		<div class="optimized__name">
-			<h2 class="optimized__title">Optimized for mobile devices</h2>
+			Optimized for mobile devices
 		</div>
 	
-		<div class="optimized__line"></div>
-	
-		<div class="optimized__content">
 			<p class="optimized__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
-		</div>
-	
+
 		<div class="optimized__btn">
-			<a href="#" class="button button--more">See more</a>
+			<a href="#" class="button button--black">See more</a>
 		</div>
 	</div>
 </div>
 
 <!-- 7 -->
-<div class="menu">
+<div class="header">
 	<div class="logo" itemscope itemtype="http://schema.org/Organization">
 		<a href="#" itemprop="url" class="logo__link">
-			Brige
+			Bridge
 		</a>
 	</div>
 
-	<div class="menu__content">
+	<nav class="menu">
     	<ul class="menu__list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
     		<li class="menu__item" itemprop="name"><a href="#" class="menu__link">home</a></li>
     		<li class="menu__item" itemprop="name"><a href="#" class="menu__link">demos & features</a></li>
@@ -172,7 +150,7 @@
     		<li class="menu__item" itemprop="name"><a href="#" class="menu__link"><i class="fa fa-search" aria-hidden="true"></i></a></li>
     		<li class="menu__item" itemprop="name"><a href="#" class="menu__link"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
     	</ul>
-    </div>
+    </nav>
 </div>
 
 <!-- 8 -->
@@ -180,7 +158,7 @@
 	<div class="card-contact__body" itemprop="address">
 		<h3 class="card-contact__title">Redmons Bar and Grill</h3>
 		<p class="card-contact__adress">7979 Leary Way Northeast<br> Redmond, WA 98052</p>
-		<a href="tel:425558980" class="card-contact__phone"><i class="fa fa-phone" aria-hidden="true"></i>(425)558-980</a>
+		<a href="tel:425558980" class="card-contact__phone">(425)558-980</a>
 	</div>
 
 	<div class="card-contact__footer">
@@ -189,7 +167,7 @@
     		<span class="raiting__sum" itemprop="ratingValue">4.5</span>
 		</div>
 		<div class="card-contact__right">
-			<span class="card-contact__like"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+			<span class="card-contact__like"></span>
 		</div>
 	</div>
 </div>
@@ -209,11 +187,11 @@
 
 	<div class="card-tarif__include" itemprop="description">
     	<ul class="card-tarif__list">
-    		<li class="card-tarif__item"><i class="fa fa-check-circle" aria-hidden="true"></i> lorem</li>
-    		<li class="card-tarif__item"><i class="fa fa-check-circle" aria-hidden="true"></i> lorem</li>
-    		<li class="card-tarif__item"><i class="fa fa-check-circle" aria-hidden="true"></i> lorem</li>
-    		<li class="card-tarif__item"><i class="fa fa-check-circle" aria-hidden="true"></i> lorem</li>
-    		<li class="card-tarif__item"><i class="fa fa-check-circle" aria-hidden="true"></i> lorem</li>
+    		<li class="card-tarif__item">lorem</li>
+    		<li class="card-tarif__item">lorem</li>
+    		<li class="card-tarif__item">lorem</li>
+    		<li class="card-tarif__item">lorem</li>
+    		<li class="card-tarif__item">lorem</li>
 		</ul>
 	</div>
 	
@@ -223,63 +201,65 @@
 </div>
 
 <!-- 10 -->
-<div class="reviews" itemscope itemtype="http://schema.org/Review">
-	<div class="reviews__top">
+<div class="reviews-list" itemscope itemtype="http://schema.org/Review">
+	<div class="reviews-list__top">
 		<span class="reviews__name">reviews <span class="reviews__kol">(2)</span></span>
 		
 	</div>
 
-	<div class="reviews__row">
+	<div class="reviews">
 		<div class="reviews__left-part">
 			<div class="rating" itemscope="reviewRating">
-				<span class="rating__value"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></span>
+				<i class="fa fa-star" aria-hidden="true"></i> 
+				<i class="fa fa-star" aria-hidden="true"></i>
+				 <i class="fa fa-star" aria-hidden="true"></i> 
+				 <i class="fa fa-star" aria-hidden="true"></i>
+				  <i class="fa fa-star" aria-hidden="true"></i>
 			</div>
 
-			<div class="reviews__inf" itemprop="author">
 				<span class="reviews__autor">Atelier</span>
 				<span class="reviews__date" itemprop="datePublished">February 20, 2015</span>
-			</div>
 		</div>
 
 		<div class="reviews__right-part">
 			<div class="reviews__theme" itemprop="itemReviewed">
-				<span class="reviews__theme-name">Best check shirt around</span>
+				Best check shirt around
 			</div>
 
-			<div class="reviews__content" itemprop="text">
-				<p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<div class="reviews__text" itemprop="text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 			</div>
 		</div>
 
 	</div>
 
-	<div class="reviews__row">
+	<div class="reviews">
 		<div class="reviews__left-part">
 			<div class="rating" itemscope="reviewRating">
-				<span class="rating__value"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i> <i class="fa fa-star-o" aria-hidden="true"></i></span>
+					<i class="fa fa-star" aria-hidden="true"></i> 
+					<i class="fa fa-star" aria-hidden="true"></i> 
+					<i class="fa fa-star" aria-hidden="true"></i> 
+					<i class="fa fa-star-o grey" aria-hidden="true"></i> 
+					<i class="fa fa-star-o grey" aria-hidden="true"></i>
 			</div>
-
-			<div class="reviews__inf" itemprop="author">
-				<span class="reviews__autor">Atelier</span>
-				<span class="reviews__date" itemprop="datePublished">February 20, 2015</span>
-			</div>
+			<span class="reviews__autor">Atelier</span>
+			<span class="reviews__date" itemprop="datePublished">February 20, 2015</span>
 		</div>
 
 		<div class="reviews__right-part">
 			<div class="reviews__theme" itemprop="itemReviewed">
-				<span class="reviews__theme-name">Buttons came off after a week</span>
+				Best check shirt around
 			</div>
-
-			<div class="reviews__content" itemprop="text">
-				<p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<div class="reviews__text" itemprop="text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
 			</div>
 		</div>
 
@@ -294,8 +274,8 @@
 
 	<div class="product__right">
 		<div class="product__arrow">
-			<button class="button button--arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-			<button class="button button--arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+			<button class="button button--right"></button>
+			<button class="button button--left"></button>
 		</div>
 		<div class="breadcrumbs">
 			<ul class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -324,10 +304,16 @@
 
 		<hr class="product__line"></hr>
 	
-		<div class="product__main-inf" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+		<div class="product__row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 			<meta itemprop="priceCurrency" content="Валюта - евро" />
 			<span class="product__price" itemprop="price">165</span>
-			<span class="product__star"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></span>
+			<span class="rating raiting--product" itemscope="reviewRating">
+					<i class="fa fa-star" aria-hidden="true"></i> 
+					<i class="fa fa-star" aria-hidden="true"></i> 
+					<i class="fa fa-star" aria-hidden="true"></i> 
+					<i class="fa fa-star" aria-hidden="true"></i> 
+					<i class="fa fa-star-o grey" aria-hidden="true"></i>
+			</span>
 			<span class="product__reviews">2 Reviews</span>
 		</div>
 
@@ -345,14 +331,14 @@
 			<span class="product__include">- model is 184 cm wears size m = 48</span>
 		</div>
 
-		<div class="bye">
-			<div class="bye__selecter">
-				<span class="bye__kol">1</span>
+		<div class="buy">
+			<div class="buy__selecter">
+				<span class="buy__kol">1</span>
 				<button class="button button--selected"><i class="fa fa-angle-up" aria-hidden="true"></i>
 					<i class="fa fa-angle-down" aria-hidden="true"></i></button>
 			</div>
-			<button class="button button--bye"><i class="fa fa-cart-plus" aria-hidden="true"></i> add to cart</button>
-			<button class="button button--favorite"><i class="fa fa-star-o" aria-hidden="true"></i></button>
+			<button class="button button--buy"><i class="fa fa-cart-plus" aria-hidden="true"></i> add to cart</button>
+			<button class="button button--favorite"></button>
 		</div>
 
 		<div class="product__footer">
@@ -362,10 +348,10 @@
 		</div>
 
 		<hr class="product__line"></hr>
-		<div class="product__shere">Shere <i class="fa fa-facebook" aria-hidden="true"></i> 0 <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-pinterest" aria-hidden="true"></i> 1</div>
+		<div class="product__shere">Share <i class="fa fa-facebook" aria-hidden="true"></i> 0 <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-pinterest" aria-hidden="true"></i> 1</div>
 		<hr class="product__line"></hr>
 	</div>
 </div>
-
+</div>
 </body>
 </html>

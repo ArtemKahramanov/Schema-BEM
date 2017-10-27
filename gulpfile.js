@@ -12,7 +12,7 @@ gulp.task('sass', function () {
                 includePaths: ['node_modules/']
             }))
             .on('error', sass.logError)
-            .pipe(gulp.dest('dist/'))
+            .pipe(gulp.dest('dist/style/'))
 });
 
 gulp.task('sass:watch', function () {
