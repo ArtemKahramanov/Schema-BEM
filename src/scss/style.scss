@@ -734,9 +734,11 @@ p{
 		padding: 10px 15px;
 		color: #444;
 		margin-right: 15px;
-		i{
+		&:before{
+			content: "\f217";
+			font-family: Fontawesome;
 			font-size: 18px;
-			padding-right: 5px;
+			margin-right: 5px;
 		}
 	}
 	&--favorite{
