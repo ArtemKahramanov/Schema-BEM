@@ -25,9 +25,14 @@ p{
 		margin: 0;
 	}
 	&__logo{
-		font-size: 44px;
-    	margin: 0 15px;
-    	color: #8b8989;
+		&:after{
+			content: "\f099";
+			font-family: Fontawesome;
+			font-size: 44px;
+			display: block;
+    		margin: 0 15px;
+    		color: #8b8989;
+    	}
 	}
 }
 
@@ -76,7 +81,6 @@ p{
 .info-block{
 	margin: auto;
 	text-align: center;
-	&__name{}
 	&__title{
 		font: 48px Roboto;
 		font-weight: bold;
@@ -104,15 +108,12 @@ p{
     		left: 390px;
 		}
 	}
-	&__content{
+	&__text{
 		max-width: 800px;
 		margin: auto;
-	}
-	&__text{
 		font-family: Roboto;
 		font-weight: 300;
 		line-height: 1.8;
-		margin: 0;
 		font-size: 20px;
 	}
 }
@@ -180,8 +181,8 @@ p{
 	margin: auto;
 	display: flex;
 	&__left-part{
-		width: 222px;
-		margin-right: 40px;
+		max-width: 290px;
+		margin-right: 80px;
 		position: relative;
 		.button{
 			position: absolute;
@@ -189,8 +190,8 @@ p{
     		right: 38px;	
 		}
 	}
-	&__rifht-part{
-		width: 70%;
+	&__right-part{
+		width: 100%;
 	}
 	&__image{
 		width: 100%;
@@ -224,6 +225,7 @@ p{
 		margin-bottom: 50px;
 	}
 	.button{
+		cursor: pointer;
 		text-transform: uppercase;
 		display: inline-block;
 		margin: 0;
@@ -237,6 +239,7 @@ p{
 }
 
 .button{
+	cursor: pointer;
 	&--black{
     	border-radius: 5px;
     	border: 2px solid black;
@@ -424,9 +427,9 @@ p{
 		}
 	}
 	&__item{
-		padding-bottom: 5px;
+		margin-bottom: 8px;
 		&:last-child{
-			padding-bottom: 0;
+			margin-bottom: 0;
 		}
 		&:before{
 			content: "\f058";
@@ -477,7 +480,7 @@ p{
 .reviews-list{
 	margin: 30px auto;
 	padding: 15px;
-	&__top{
+	&__header{
 		margin-bottom: 40px;
 	}
 }
@@ -527,7 +530,7 @@ p{
 }
 
 .rating{
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 	color: #e6bb34;
 }
 .grey{
@@ -589,17 +592,24 @@ p{
 		margin: 15px 0;
 	}
 	&__text{
-		display: block;
 		color: #7f7f7f;
 		font-size: 14px;
-		padding-bottom: 5px;
+		margin-bottom: 5px;
 	}
 	&__shere{
 		color: #7f7f7f;
-		font-size: 18px;
 		i{
-			padding-left: 10px;
+			margin-left: 10px;
+			font-size: 15px;
 		}
+		.product__text{
+			font-size: 16px;
+		}
+	}
+	&__text-bold{
+		font-size: 18px;
+		font-weight: 900;
+		color: #464646;
 	}
 }
 
@@ -627,12 +637,12 @@ p{
 		height: 43px;
     	border: 1px solid #dfdfdf;
     	padding: 0;
-    	display: inline-grid;
-    	align-items: center;
-    	justify-content: center;
+    	text-align: center;
+    	font-size: 16px;
 	}
 	&__selecter{
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		margin-right: 20px;
 	}
@@ -674,11 +684,14 @@ p{
     		display: inline-flex;
 		}
 	}
-	&--selected{
+	&--top{
 		border: none;
 		background: white;
 		padding: 0;
-		i{
+		&:after{
+			content: "\f106";
+			font-family: Fontawesome;
+			display: block;
     		font-size: 14px;
     		padding: 5px;
     		height: 11px;
@@ -691,6 +704,25 @@ p{
     		&:first-child{
     			border-bottom: none;
     		}
+		}
+	}
+	&--bottom{
+		border: none;
+		background: white;
+		padding: 0;
+		&:after{
+			content: "\f107";
+			font-family: Fontawesome;
+			display: block;
+    		font-size: 14px;
+    		padding: 5px;
+    		height: 11px;
+    		border-right: 1px solid #dfdfdf;
+    		border-top: 1px solid #dfdfdf;
+    		border-bottom: 1px solid #dfdfdf;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
 		}
 	}
 	&--buy{

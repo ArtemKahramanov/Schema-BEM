@@ -10,13 +10,11 @@
 <div class="container">
 <!-- 2 -->
 <div class="twitt">
-	<div class="twitt__logo">
-		<i class="fa fa-twitter" aria-hidden="true"></i>
-	</div>
+	<div class="twitt__logo"></div>
 
 	<div class="twitt__content">
 		<p class="twitt__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-		<p class="twitt__date">2 day ago</p>
+		<span class="twitt__date">2 day ago</span>
 	</div>
 </div>
 
@@ -55,20 +53,16 @@
 
 <!-- 4 -->
 <div class="info-block">
-	<div class="info-block__name">
-		<h1 class="info-block__title">The first of kind</h1>
-	</div>
+
+	<h1 class="info-block__title">The first of kind</h1>
 
 	<div class="info-block__line">
 		<i class="fa fa-list-ul" aria-hidden="true"></i>
 	</div>
-
-	<div class="info-block__content">
-		<p class="info-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor</p>
-	</div>
+	<p class="info-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor</p>
 </div>
 
 
@@ -112,21 +106,19 @@
 	    <a href="#" class="button button--white">See more</a>
 	</div>
 	
-	<div class="optimized__rifht-part">
+	<div class="optimized__right-part">
 		<div class="optimized__name">
 			Optimized for mobile devices
 		</div>
 	
-			<p class="optimized__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+		<p class="optimized__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
 
-		<div class="optimized__btn">
-			<a href="#" class="button button--black">See more</a>
-		</div>
+		<a href="#" class="button button--black">See more</a>
 	</div>
 </div>
 
@@ -187,11 +179,10 @@
 
 	<div class="card-tarif__include" itemprop="description">
     	<ul class="card-tarif__list">
-    		<li class="card-tarif__item">lorem</li>
-    		<li class="card-tarif__item">lorem</li>
-    		<li class="card-tarif__item">lorem</li>
-    		<li class="card-tarif__item">lorem</li>
-    		<li class="card-tarif__item">lorem</li>
+    		<li class="card-tarif__item">Accept Reviews</li>
+    		<li class="card-tarif__item">Edit Your Listing</li>
+    		<li class="card-tarif__item">Tacke Booking Online</li>
+    		<li class="card-tarif__item">Post Deals & Promotins</li>
 		</ul>
 	</div>
 	
@@ -202,7 +193,7 @@
 
 <!-- 10 -->
 <div class="reviews-list" itemscope itemtype="http://schema.org/Review">
-	<div class="reviews-list__top">
+	<div class="reviews-list__header">
 		<span class="reviews__name">reviews <span class="reviews__kol">(2)</span></span>
 		
 	</div>
@@ -212,9 +203,9 @@
 			<div class="rating" itemscope="reviewRating">
 				<i class="fa fa-star" aria-hidden="true"></i> 
 				<i class="fa fa-star" aria-hidden="true"></i>
-				 <i class="fa fa-star" aria-hidden="true"></i> 
-				 <i class="fa fa-star" aria-hidden="true"></i>
-				  <i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i> 
+				<i class="fa fa-star" aria-hidden="true"></i>
+				<i class="fa fa-star" aria-hidden="true"></i>
 			</div>
 
 				<span class="reviews__autor">Atelier</span>
@@ -306,7 +297,7 @@
 	
 		<div class="product__row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 			<meta itemprop="priceCurrency" content="Валюта - евро" />
-			<span class="product__price" itemprop="price">165</span>
+			<span class="product__price" itemprop="price">£165</span>
 			<span class="rating raiting--product" itemscope="reviewRating">
 					<i class="fa fa-star" aria-hidden="true"></i> 
 					<i class="fa fa-star" aria-hidden="true"></i> 
@@ -332,23 +323,30 @@
 		</div>
 
 		<div class="buy">
+				<input type="text" class="buy__kol" value="1">
 			<div class="buy__selecter">
-				<span class="buy__kol">1</span>
-				<button class="button button--selected"><i class="fa fa-angle-up" aria-hidden="true"></i>
-					<i class="fa fa-angle-down" aria-hidden="true"></i></button>
+				<button class="button button--top"></button>
+				<button class="button button--bottom"></button>
 			</div>
 			<button class="button button--buy"><i class="fa fa-cart-plus" aria-hidden="true"></i> add to cart</button>
 			<button class="button button--favorite"></button>
 		</div>
 
 		<div class="product__footer">
-			<span class="product__text">SKU: 671867</span>
-			<span class="product__text">Caregory: Shirting</span>
-			<span class="product__text">Tags: Checks, Shirting</span>
+			<div class="product__text">SKU: 671867</div>
+			<div class="product__text">Caregory: Shirting</div>
+			<div class="product__text">Tags: Checks, Shirting</div>
 		</div>
 
 		<hr class="product__line"></hr>
-		<div class="product__shere">Share <i class="fa fa-facebook" aria-hidden="true"></i> 0 <i class="fa fa-twitter" aria-hidden="true"></i> <i class="fa fa-pinterest" aria-hidden="true"></i> 1</div>
+		<div class="product__shere">
+			<span class="product__text-bold">Share</span> 
+			<span class="product__text"><i class="fa fa-facebook" aria-hidden="true"></i></span> 
+			<span class="product__text">0</span>
+			<span class="product__text"><i class="fa fa-twitter" aria-hidden="true"></i></span> 
+			<span class="product__text"><i class="fa fa-pinterest" aria-hidden="true"></i></span>
+			<span class="product__text">1</span>
+		</div>
 		<hr class="product__line"></hr>
 	</div>
 </div>
