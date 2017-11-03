@@ -19,7 +19,7 @@ gulp.task('sass:watch', function () {
     gulp.watch('src/scss/style.scss', ['sass']);
 });
 
-gulp.task('browser-sync', ['html','sass', 'sass:watch'], function() {
+gulp.task('browser-sync', ['html','sass', 'sass:watch', 'js'], function() {
     browserSync.init({
         server: {baseDir: "dist/"},
         notify: true
@@ -44,5 +44,18 @@ gulp.task('html:watch', function () {
  return  gulp.watch('./src/*.html',['html']);
 });
 
+gulp.task('js', function () {
+ return  gulp.src('src/js/*.js')
+    .pipe(gulp.dest('dist/js/'))
+    .pipe(browserSync.reload({
+        stream: true
+    }))
+    ;
+});
 
-gulp.task('default', ['browser-sync', 'sass:watch', 'html:watch', 'images']);
+gulp.task('js:watch', function () {
+ return  gulp.watch('./src/js/*.js',['js']);
+});
+
+
+gulp.task('default', ['browser-sync', 'sass:watch', 'html:watch', 'js:watch', 'images']);

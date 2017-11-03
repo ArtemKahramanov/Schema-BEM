@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -10,7 +12,9 @@
 <div class="container">
 <!-- 2 -->
 <div class="twitt">
-	<div class="twitt__logo"></div>
+	<div class="twitt__logo">
+		<img src="img/twi.png" class="twitt__image">
+	</div>
 
 	<div class="twitt__content">
 		<p class="twitt__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
@@ -67,11 +71,13 @@
 
 
 <!-- 5 -->
-<div class="biography">
+<div class="biography" id="count">
 	
-	<img src="img/pperson.jpg" class="biography__img">
-
-	<div class="title title--line">This is me. Designer by day <img src="img/symbol.png" class="biography__symbol" width="30" height="30"> developer by night. I never sleep... almost</div>
+	<div class="biography__img">
+		<img src="img/pperson.jpg" class="biography__person">
+	</div>
+	
+	<div class="title title--line">This is me. Designer by day <span class="biography__symbol"></span> developer by night. I never sleep... almost</div>
 
 
 	<p class="text-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -83,15 +89,15 @@
 
 	<div class="biography__statistics">
 		<div class="biography-item">
-			<span class="biography-item__numbers">112</span>
+			<div class="biography-item__numbers"><span class="spincrement">112</span></div>
 			<span class="biography-item__short-desc">lorem</span>
 		</div>
 		<div class="biography-item">
-			<span class="biography-item__numbers">3265</span>
+			<div class="biography-item__numbers"><span class="spincrement">3265</span></div>
 			<span class="biography-item__short-desc">lorem</span>
 		</div>
 		<div class="biography-item">
-			<span class="biography-item__numbers">47</span>
+			<div class="biography-item__numbers"><span class="spincrement">47</span></div>
 			<span class="biography-item__short-desc">lorem</span>
 		</div>
 	</div>
@@ -131,6 +137,7 @@
 	</div>
 
 	<nav class="menu">
+		<button class="menu__butt visible-xs"><i class="fa fa-bars" aria-hidden="true"></i></button>
     	<ul class="menu__list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
     		<li class="menu__item" itemprop="name"><a href="#" class="menu__link">home</a></li>
     		<li class="menu__item" itemprop="name"><a href="#" class="menu__link">demos & features</a></li>
@@ -140,7 +147,7 @@
     		<li class="menu__item" itemprop="name"><a href="#" class="menu__link">blog</a></li>
     		<li class="menu__item" itemprop="name"><a href="#" class="menu__link">shop</a></li>
     		<li class="menu__item" itemprop="name"><a href="#" class="menu__link"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-    		<li class="menu__item" itemprop="name"><a href="#" class="menu__link"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+    		<!-- <li class="menu__item" itemprop="name"><a href="#" class="menu__link"><i class="fa fa-bars" aria-hidden="true"></i></a></li> -->
     	</ul>
     </nav>
 </div>
@@ -159,7 +166,6 @@
     		<span class="raiting__sum" itemprop="ratingValue">4.5</span>
 		</div>
 		<div class="card-contact__right">
-			<span class="card-contact__like"></span>
 		</div>
 	</div>
 </div>
@@ -313,7 +319,7 @@
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+			cillum dolore.</p>
 		</div>
 
 		<div class="product__additionally">
@@ -333,23 +339,24 @@
 		</div>
 
 		<div class="product__footer">
-			<div class="product__text">SKU: 671867</div>
-			<div class="product__text">Caregory: Shirting</div>
-			<div class="product__text">Tags: Checks, Shirting</div>
+			<div class="text">SKU: 671867</div>
+			<div class="text">Caregory: Shirting</div>
+			<div class="text">Tags: Checks, Shirting</div>
 		</div>
 
 		<hr class="product__line"></hr>
 		<div class="product__shere">
-			<span class="product__text-bold">Share</span> 
-			<span class="product__text"><i class="fa fa-facebook" aria-hidden="true"></i></span> 
-			<span class="product__text">0</span>
-			<span class="product__text"><i class="fa fa-twitter" aria-hidden="true"></i></span> 
-			<span class="product__text"><i class="fa fa-pinterest" aria-hidden="true"></i></span>
-			<span class="product__text">1</span>
+			<span class="text-bold">Share</span> 
+			<span class="text"><i class="fa fa-facebook" aria-hidden="true"></i> 0</span> 
+			<span class="text"><i class="fa fa-twitter" aria-hidden="true"></i></span> 
+			<span class="text"><i class="fa fa-pinterest" aria-hidden="true"></i> 1</span>
 		</div>
 		<hr class="product__line"></hr>
 	</div>
 </div>
 </div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery.spincrement.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
