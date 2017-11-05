@@ -9,7 +9,7 @@ ul{
 }
 a{
     text-decoration: none;
-    &:hover{
+    &:hover, &:focus{
         text-decoration: none;
     }
 }
@@ -367,12 +367,9 @@ a{
     &__body{
         background: url(../img/bar.jpg) no-repeat;
         background-size: cover;
-        display: flex;
-        justify-content: flex-end;
         min-height: 200px;
         border-radius: 5px 5px 0 0;
-        flex-direction: column;
-        padding: 15px 15px 45px 15px;
+        padding: 85px 15px 45px 15px;
     }
     &__adress{
         color: white;
