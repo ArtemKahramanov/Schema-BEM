@@ -2,7 +2,8 @@
 var gulp = require('gulp'),
         sass = require('gulp-sass'),
         browserSync = require('browser-sync'),
-        sass = require('gulp-sass')
+        sass = require('gulp-sass'),
+        autoprefixer = require('gulp-autoprefixer');
 
 // Компиляция stylesheet.css
 
@@ -11,6 +12,7 @@ gulp.task('sass', function () {
             .pipe(sass({
                 includePaths: ['node_modules/']
             }))
+            .pipe(autoprefixer(['last 15 versions']))
             .on('error', sass.logError)
             .pipe(gulp.dest('dist/style/'))
 });
