@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <title>Test</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -109,8 +109,7 @@
 
             <!-- 6 -->
             <div class="optimized">
-                <div class="optimized__left-part">
-                    <!-- <img src="img/rest.jpg" class="optimized__image" alt="Application for mobile"> -->
+                <div class="image-block">
                     <a href="#" class="button button--white">View more</a>
                 </div>
 
@@ -163,7 +162,7 @@
                 </div>
 
                 <div class="card-contact__footer">
-                    <div class="raiting">
+                    <div class="raiting" itemscope itemtype="http://schema.org/Rating">
                         <span class="raiting__star"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></span>
                         <span class="raiting__sum" itemprop="ratingValue">4.5</span>
                     </div>
@@ -179,7 +178,8 @@
 
                 <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                     <meta itemprop="priceCurrency" content="Валюта - доллары" />
-                    <span itemprop="price" class="price__sum">$8</span> 
+                    <span class="price__symbol">$</span>
+                    <span itemprop="price" class="price__sum">8</span> 
                     <span class="price__time">/month</span> 
                 </div>
 
@@ -304,7 +304,8 @@
 
                     <div class="product__row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <meta itemprop="priceCurrency" content="Валюта - евро" />
-                        <span class="product__price" itemprop="price">£165</span>
+                        <span class="price-symbol">£</span>
+                        <span class="product__price" itemprop="price">165</span>
                         <span class="rating raiting--product" itemscope="reviewRating">
                             <i class="fa fa-star" aria-hidden="true"></i> 
                             <i class="fa fa-star" aria-hidden="true"></i> 
@@ -330,15 +331,16 @@
                     </div>
 
                     <div class="buy">
-                        <form class="buy__form">
+                        <form class="buy__form" action="" method="">
                             <input type="text" class="buy__kol" value="1">
                             <div class="buy__selecter">
-                                <button class="button button--top"></button>
-                                <button class="button button--bottom"></button>
+                                <button class="button button--top" type="button"></button>
+                                <button class="button button--bottom" type="button"></button>
                             </div>
+                        	<button class="button button--buy" type="submit">add to cart</button>
+                        	<button class="button button--favorite" type="button"></button>
                         </form>
-                        <button class="button button--buy">add to cart</button>
-                        <button class="button button--favorite"></button>
+
                     </div>
 
                     <div class="product__footer">

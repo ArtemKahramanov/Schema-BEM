@@ -204,19 +204,6 @@ a{
 .optimized{
     margin: auto;
     display: flex;
-    &__left-part{
-        max-width: 380px;
-        width: 380px;
-        max-height: 550px;
-        height: 545px;
-        margin-right: 80px;
-        position: relative;
-        background: url('../img/rest.jpg') no-repeat center center;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     &__right-part{
         width: 100%;
     }
@@ -264,7 +251,19 @@ a{
         font-size: 18px;
     }
 }
-
+.image-block{
+    max-width: 380px;
+    width: 380px;
+    max-height: 550px;
+    height: 545px;
+    margin-right: 80px;
+    position: relative;
+    background: url('../img/rest.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .button{
     cursor: pointer;
     &--black{
