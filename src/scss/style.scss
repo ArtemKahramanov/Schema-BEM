@@ -30,9 +30,14 @@ a{
     }
     &__logo{
         margin: 0 15px;
+        max-width: 50px;
     }
     &__image{
         max-width: 35px;
+    }
+    &__content{
+        max-width: 300px;
+        padding-right: 15px;
     }
 }
 
@@ -204,8 +209,9 @@ a{
 .optimized{
     margin: auto;
     display: flex;
+    max-width: 1200px;
     &__right-part{
-        width: 100%;
+        width: 60%;
     }
     &__image{
         width: 100%;
@@ -253,13 +259,13 @@ a{
 }
 .image-block{
     max-width: 380px;
-    width: 380px;
+    width: 40%;
     max-height: 550px;
     height: 545px;
     margin-right: 80px;
     position: relative;
     background: url('../img/rest.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -428,6 +434,8 @@ a{
         border-radius: 50%;
         width: 28px;
         height: 28px;
+        max-width: 28px;
+        max-height: 28px;
         font-size: 14px;
         align-items: center;
         justify-content: center;
@@ -881,15 +889,15 @@ a{
     }
     .optimized{
         flex-direction: column;
-        &__left-part{
+        &__right-part{
             max-width: 100%;
             width: 100%;
-            margin: 0 0 15px 0;
-            text-align: center;
-            img{
-                max-width: 300px;
-            }
         }
+    }
+    .image-block{
+        margin-bottom: 25px;
+        width: 100%;
+        max-width: 100%;
     }
     .text-block{
         padding: 0 15px;
