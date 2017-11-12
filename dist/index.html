@@ -140,14 +140,14 @@
                 <nav class="menu">
                     <button class="menu__butt visible-xs"><i class="fa fa-bars" aria-hidden="true"></i></button>
                     <ul class="menu__list" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link">home</a></li>
-                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link">demos & features</a></li>
-                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link">pages</a></li>
-                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link">elements</a></li>
-                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link">work</a></li>
-                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link">blog</a></li>
-                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link">shop</a></li>
-                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link" itemprop="url">home</a></li>
+                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link" itemprop="url">demos & features</a></li>
+                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link" itemprop="url">pages</a></li>
+                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link" itemprop="url">elements</a></li>
+                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link" itemprop="url">work</a></li>
+                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link" itemprop="url">blog</a></li>
+                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link" itemprop="url">shop</a></li>
+                        <li class="menu__item" itemprop="name"><a href="#" class="menu__link" itemprop="url"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                         <!-- <li class="menu__item" itemprop="name"><a href="#" class="menu__link"><i class="fa fa-bars" aria-hidden="true"></i></a></li> form-->
                     </ul>
                 </nav>
@@ -162,9 +162,9 @@
                 </div>
 
                 <div class="card-contact__footer">
-                    <div class="raiting" itemscope itemtype="http://schema.org/Rating">
-                        <span class="raiting__star"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></span>
-                        <span class="raiting__sum" itemprop="ratingValue">4.5</span>
+                    <div class="rating" itemscope itemtype="http://schema.org/Rating">
+                        <span class="rating__star"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i></span>
+                        <span class="rating__sum" itemprop="ratingValue">4.5</span>
                     </div>
                     <button class="card-contact__right"></button>
                 </div>
@@ -205,7 +205,10 @@
                 </div>
                 <div class="reviews"  itemscope itemtype="http://schema.org/Review">
                     <div class="reviews__left-part">
-                        <div class="rating" itemscope="reviewRating">
+                        <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                            <meta itemprop="worstRating" content="0"/>
+                            <meta itemprop="ratingValue" content="5"/>
+                            <meta itemprop="bestRating" content="5"/>
                             <i class="fa fa-star" aria-hidden="true"></i> 
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i> 
@@ -216,8 +219,13 @@
                         <span class="reviews__date" itemprop="datePublished" content="2009-05-08">February 20, 2015</span>
                     </div>
                     <div class="reviews__right-part">
-                        <div class="reviews__theme" itemprop="itemReviewed">
-                            Best check shirt around
+                        <div class="reviews__theme" itemscope itemprop="itemReviewed" itemtype="http://schema.org/Product">
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" hidden="hidden">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <meta itemprop="price" content="234"> 
+                            </div>
+                            <meta itemprop="description" content="description">
+                            <span itemprop="name">Best check shirt around</span>
                         </div>
                         <div class="reviews__text" itemprop="text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -228,9 +236,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews"  itemscope itemtype="http://schema.org/Review">
+                <div class="reviews" itemscope itemtype="http://schema.org/Review">
                     <div class="reviews__left-part">
-                        <div class="rating" itemscope="reviewRating">
+                        <div class="rating" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                            <meta itemprop="worstRating" content="0"/>
+                            <meta itemprop="ratingValue" content="3"/>
+                            <meta itemprop="bestRating" content="5"/>
                             <i class="fa fa-star" aria-hidden="true"></i> 
                             <i class="fa fa-star" aria-hidden="true"></i> 
                             <i class="fa fa-star" aria-hidden="true"></i> 
@@ -241,8 +252,13 @@
                         <span class="reviews__date" itemprop="datePublished" content="2009-05-08">February 20, 2015</span>
                     </div>
                     <div class="reviews__right-part">
-                        <div class="reviews__theme" itemprop="itemReviewed">
-                            Best check shirt around
+                        <div class="reviews__theme" itemscope itemprop="itemReviewed" itemtype="http://schema.org/Product">
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" hidden="hidden">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <meta itemprop="price" content="234"> 
+                            </div>
+                            <meta itemprop="description" content="description">
+                            <span itemprop="name">Best check shirt around</span>
                         </div>
                         <div class="reviews__text" itemprop="text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -297,7 +313,7 @@
                         <meta itemprop="priceCurrency" content="EUR" />
                         <span class="price-symbol">£</span>
                         <span class="product__price" itemprop="price">165</span>
-                        <span class="rating raiting--product" itemscope="reviewRating">
+                        <span class="rating rating--product" itemscope="reviewRating">
                             <i class="fa fa-star" aria-hidden="true"></i> 
                             <i class="fa fa-star" aria-hidden="true"></i> 
                             <i class="fa fa-star" aria-hidden="true"></i> 
@@ -328,8 +344,8 @@
                                 <button class="button button--top" type="button"></button>
                                 <button class="button button--bottom" type="button"></button>
                             </div>
-                        	<button class="button button--buy" type="submit">add to cart</button>
-                        	<button class="button button--favorite" type="button"></button>
+                            <button class="button button--buy" type="submit">add to cart</button>
+                            <button class="button button--favorite" type="button"></button>
                         </form>
 
                     </div>
