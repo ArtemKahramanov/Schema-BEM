@@ -131,8 +131,8 @@
 
             <!-- 7 -->
             <div class="header">
-                <div class="logo" itemscope itemtype="http://schema.org/Organization">
-                    <a href="#" itemprop="url" class="logo__link">
+                <div class="logo">
+                    <a href="#" class="logo__link">
                         Bridge
                     </a>
                 </div>
@@ -156,9 +156,9 @@
             <!-- 8 -->
             <div class="card-contact" itemscope itemtype="http://schema.org/Organization">
                 <div class="card-contact__body" itemprop="address">
-                    <h3 class="card-contact__title">Redmons Bar and Grill</h3>
+                    <h3 class="card-contact__title" itemprop="name">Redmons Bar and Grill</h3>
                     <p class="card-contact__adress">7979 Leary Way Northeast<br> Redmond, WA 98052</p>
-                    <a href="tel:425558980" class="card-contact__phone">(425)558-980</a>
+                    <a href="tel:425558980" class="card-contact__phone" itemprop="telephone">(425)558-980</a>
                 </div>
 
                 <div class="card-contact__footer">
@@ -177,7 +177,7 @@
                 </div>
 
                 <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <meta itemprop="priceCurrency" content="Валюта - доллары" />
+                    <meta itemprop="priceCurrency" content="USD" />
                     <span class="price__symbol">$</span>
                     <span itemprop="price" class="price__sum">8</span> 
                     <span class="price__time">/month</span> 
@@ -199,13 +199,11 @@
             </div>
 
             <!-- 10 -->
-            <div class="reviews-list" itemscope itemtype="http://schema.org/Review">
+            <div class="reviews-list">
                 <div class="reviews-list__header">
                     <span class="reviews__name">reviews <span class="reviews__kol">(2)</span></span>
-
                 </div>
-
-                <div class="reviews">
+                <div class="reviews"  itemscope itemtype="http://schema.org/Review">
                     <div class="reviews__left-part">
                         <div class="rating" itemscope="reviewRating">
                             <i class="fa fa-star" aria-hidden="true"></i> 
@@ -214,16 +212,13 @@
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star" aria-hidden="true"></i>
                         </div>
-
                         <span class="reviews__autor" itemprop="author">Atelier</span>
-                        <span class="reviews__date" itemprop="datePublished">February 20, 2015</span>
+                        <span class="reviews__date" itemprop="datePublished" content="2009-05-08">February 20, 2015</span>
                     </div>
-
                     <div class="reviews__right-part">
                         <div class="reviews__theme" itemprop="itemReviewed">
                             Best check shirt around
                         </div>
-
                         <div class="reviews__text" itemprop="text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -232,10 +227,8 @@
                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
                         </div>
                     </div>
-
                 </div>
-
-                <div class="reviews">
+                <div class="reviews"  itemscope itemtype="http://schema.org/Review">
                     <div class="reviews__left-part">
                         <div class="rating" itemscope="reviewRating">
                             <i class="fa fa-star" aria-hidden="true"></i> 
@@ -245,9 +238,8 @@
                             <i class="fa fa-star-o grey" aria-hidden="true"></i>
                         </div>
                         <span class="reviews__autor" itemprop="author">Atelier</span>
-                        <span class="reviews__date" itemprop="datePublished">February 20, 2015</span>
+                        <span class="reviews__date" itemprop="datePublished" content="2009-05-08">February 20, 2015</span>
                     </div>
-
                     <div class="reviews__right-part">
                         <div class="reviews__theme" itemprop="itemReviewed">
                             Best check shirt around
@@ -260,7 +252,6 @@
                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -303,7 +294,7 @@
                     <hr class="product__line">
 
                     <div class="product__row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                        <meta itemprop="priceCurrency" content="Валюта - евро" />
+                        <meta itemprop="priceCurrency" content="EUR" />
                         <span class="price-symbol">£</span>
                         <span class="product__price" itemprop="price">165</span>
                         <span class="rating raiting--product" itemscope="reviewRating">
